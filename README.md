@@ -1,5 +1,7 @@
 # Kougaku
 
+> Význam jména - 光学 - *optika*
+
 Kougaku je stránka zajišťující všechny potřeby při vaší cestě sbírání hudby, seriálů či filmů. Její účel je jednoduché indexování všech populárních forem fyzických médií, které by jste chtěli sbírat, do jednoduché knihovny. Mezi podporované média patří gramofonové desky, CD, kazety, DVD, Blu-Ray a další.
 
 ## Funkce
