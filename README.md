@@ -36,7 +36,17 @@ Administrátorský účet je jeden unikátní a je vytvářen při prvním spuš
 
 ## Instalace
 
-Kougaku je stavěný pro používání jako Docker container. Je primárně designovaný na deployment přes Docker Compose.
+Kougaku je stavěný pro používání jako Docker container.
+
+### Docker CLI
+
+```bash
+docker build -t kougaku .
+docker run -p 8000:80 kougaku
+```
+
+
+### Docker Compose
 
 <details>
 
