@@ -45,11 +45,10 @@ Kougaku je stavěný pro používání jako Docker container. Je primárně desi
 ```yml
 services:
   kougaku:
-    image: kougaku/latest
-	ports:
-	  - "8000:80"
-	volumes:
-	  - "./data:/var/lib/kougaku"
+    ports:
+      - "8000:80"
+    volumes:
+      - "./data:/var/lib/kougaku"
 ```
 </details>
 
@@ -62,17 +61,16 @@ services:
 ```yml
 services:
   kougaku:
-    image: kougaku/latest
-	volumes:
-	  - "./data:/var/lib/kougaku"
+    volumes:
+      - "./data:/var/lib/kougaku"
     networks:
-	  - traefik
-	labels:
-	  - "traefik.enabled=true"
-	  - "traefik.http.routers.kougaku.rule=Host(`kougaku.example.com`)" # Change this to your domain
-	  ## - "traefik.http.routers.kougaku.tls=true" # Uncomment if you have a TLS certificate set in your HTTP router
-	  - "traefik.http.routers.kougaku.tls.certresolver=default"
-	  - "traefik.http.services.kougaku.loadbalancer.server.port=80"
+      - traefik
+    labels:
+      - "traefik.enabled=true"
+      - "traefik.http.routers.kougaku.rule=Host(`kougaku.example.com`)" # Change this to your domain
+      # - "traefik.http.routers.kougaku.tls=true" # Uncomment if you have a TLS certificate set in your HTTP router
+      - "traefik.http.routers.kougaku.tls.certresolver=default"
+      - "traefik.http.services.kougaku.loadbalancer.server.port=80"
 
 networks:
   traefik:
