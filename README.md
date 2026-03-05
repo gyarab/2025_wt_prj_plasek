@@ -21,7 +21,7 @@ Uživatel je schopen vygenerovat odkaz, pomocí kterého může nechat ostatní 
 
 #### Nepřihlášený
 
-Nepřihlášený uživatel nemá žádné privelegie na používání webové aplikace kromě zhlédnutí sdílecího odkazu vygenerovaný přihlášeným uživatelem.
+Nepřihlášený uživatel nemá žádné privelegie na používání webové aplikace kromě zhlédnutí sdílecího odkazu vygenerovaný přihlášeným uživatelem a statistik označené administrátorem jako veřejné.
 
 #### Uživatel
 
@@ -33,6 +33,28 @@ Administrátorský účet je jeden unikátní a je vytvářen při prvním spuš
 
 > [!CAUTION]
 > V případě zapomenutí hesla administrátorského účtu je třeba **reinstalovat Kougaku**.
+
+
+## Wireframe
+
+<details>
+<summary>Desktopová část</summary>
+
+![Part 1](./.github/assets/wireframe/20260305_233446.jpg)
+![Part 2](./.github/assets/wireframe/20260305_233457.jpg)
+![Part 3](./.github/assets/wireframe/20260305_233506.jpg)
+![Part 4](./.github/assets/wireframe/20260305_233515.jpg)
+![Part 5](./.github/assets/wireframe/20260305_233522.jpg)
+</details>
+
+<br>
+
+<details>
+<summary><b>Mobilní část</b></summary>
+
+![Part 6](./.github/assets/wireframe/20260305_233534.jpg)
+![Part 7](./.github/assets/wireframe/20260305_233545.jpg)
+</details>
 
 ## Instalace
 
