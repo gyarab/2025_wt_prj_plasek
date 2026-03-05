@@ -2,8 +2,80 @@
 
 > Význam jména - 光学 - *optika*
 
-Kougaku je stránka zajišťující všechny potřeby při vaší cestě sbírání hudby, seriálů či filmů. Její účel je jednoduché indexování všech populárních forem fyzických médií, které by jste chtěli sbírat, do jednoduché knihovny. Mezi podporované média patří gramofonové desky, CD, kazety, DVD, Blu-Ray a další.
+## Odborný článek
 
-## Funkce
+Kougaku je self-hosted webová aplikace pro grafické indexování multimediálních knihoven. Její účel je jednoduché indexování, kategorizování a třízení fyzických médií do grafického prostředí. 
 
-Hlavní sekce aplikace je knihovna hudby kategorizovaná podle alba. Každé album má odkazy na streamovací služby + [Discogs](https://discogs.com) a [Musicbrainz](https://musicbrainz.org) stránky. Rozhraní je příbuzné uživatelskému rozhraní aplikací na poslech hudby, přesto ale má extra funkce přizpůsobené k fyzickým médiím. Mezi ně patří například importování CUE/BIN párů do knihovny, automatický tagging hudebních souborů, integrace s Discogs/Musicbrainz, atd.
+### Funkce
+
+#### Knihovna
+Položky jsou importované do knihovny podle vybrané formy médie (pomocí CUE souborů, WAV soubory na kterých proběhene audio fingerprinting, atd.), mezi podporované patří gramofonové desky, CD, kazety a digital downloads. Položky v knihovně mají u sebe veškerá metadata, včetně názvu alba, umělce, interpreta, listu tracků, atd., plus odkazy na [Musicbrainz](https://muzicbrainz.org) a [Discogs](https://discogs.com).
+
+#### Statistiky
+Každý uživatel je schopný nechat proběhnout analýzu na své knihovně, která prezentuje statistiky, jako nejposlouchanější žánr, nejoblíbenější umělci, aktuální finanční hodnota knihovny, atd.
+
+#### Sdílení knihovny
+Uživatel je schopen vygenerovat odkaz, pomocí kterého může nechat ostatní lidi nahlédnout do jejich knihovny. 
+
+### Role
+
+#### Nepřihlášený
+
+Nepřihlášený uživatel nemá žádné privelegie na používání webové aplikace kromě zhlédnutí sdílecího odkazu vygenerovaný přihlášeným uživatelem.
+
+#### Uživatel
+
+Uživatel si může vytvořit uživatele kontakováním administrátora instace. Uživatel je schopný přidávat do/upravovat/odstraňovat ze svojí knihovny. Taky má možnost upravovat osobní nastavení, která jsou ukládaná na bázi sessionu. (light/dark mode, scrobbling na [Last.FM](https://last.fm), atd.)
+
+#### Administrátor
+
+Administrátorský účet je jeden unikátní a je vytvářen při prvním spuštění instace. Je schopný přidávat/upravovat/odstraňovat uživatele a spravovat globální nastavení instace.
+
+> [!CAUTION]
+> V případě zapomenutí hesla administrátorského účtu je třeba **reinstalovat Kougaku** 
+
+## Instalace
+
+Kougaku je dostupný jako docker image na [Docker Hub](https://hub.docker.com). Je primárně designovaný pro deployment přes Docker Compose.
+
+<details>
+
+<summary><b>docker-compose.yml (minimální)</b></summary>
+
+```yml
+services:
+  kougaku:
+    image: kougaku/latest
+	ports:
+	  - "8000:80"
+	volumes:
+	  - "./data:/var/lib/kougaku"
+```
+</details>
+
+<br>
+
+<details>
+
+<summary><b>docker-compose.yml (Traefik)</b></summary>
+
+```yml
+services:
+  kougaku:
+    image: kougaku/latest
+	volumes:
+	  - "./data:/var/lib/kougaku"
+    networks:
+	  - traefik
+	labels:
+	  - "traefik.enabled=true"
+	  - "traefik.http.routers.kougaku.rule=Host(`kougaku.example.com`)" # Change this to your domain
+	  ## - "traefik.http.routers.kougaku.tls=true" # Uncomment if you have a TLS certificate set in your HTTP router
+	  - "traefik.http.routers.kougaku.tls.certresolver=default"
+	  - "traefik.http.services.kougaku.loadbalancer.server.port=80"
+
+networks:
+  traefik:
+    external: true
+```
+</details>
