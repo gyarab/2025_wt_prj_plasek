@@ -4,7 +4,7 @@
 
 ## Odborný článek
 
-Kougaku je self-hosted webová aplikace pro grafické indexování multimediálních knihoven. Její účel je jednoduché indexování, kategorizování a třízení fyzických médií do grafického prostředí. 
+Kougaku je self-hosted webová aplikace pro indexování multimediálních knihoven. Její účel je jednoduché indexování, kategorizování a třízení fyzických médií do grafického prostředí. 
 
 ### Funkce
 
@@ -32,11 +32,11 @@ Uživatel si může vytvořit uživatele kontakováním administrátora instace.
 Administrátorský účet je jeden unikátní a je vytvářen při prvním spuštění instace. Je schopný přidávat/upravovat/odstraňovat uživatele a spravovat globální nastavení instace.
 
 > [!CAUTION]
-> V případě zapomenutí hesla administrátorského účtu je třeba **reinstalovat Kougaku** 
+> V případě zapomenutí hesla administrátorského účtu je třeba **reinstalovat Kougaku**.
 
 ## Instalace
 
-Kougaku je dostupný jako docker image na [Docker Hub](https://hub.docker.com). Je primárně designovaný pro deployment přes Docker Compose.
+Kougaku je stavěný pro používání jako Docker container. Je primárně designovaný na deployment přes Docker Compose.
 
 <details>
 
