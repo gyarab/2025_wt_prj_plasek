@@ -34,6 +34,9 @@ Administrátorský účet je jeden unikátní a je vytvářen při prvním spuš
 > [!CAUTION]
 > V případě zapomenutí hesla administrátorského účtu je třeba **reinstalovat Kougaku**.
 
+## User flow
+
+![User flow](./.github/assets/userflow/20260306_082503.jpg)
 
 ## Wireframe
 
