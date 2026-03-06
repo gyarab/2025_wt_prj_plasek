@@ -9,7 +9,7 @@ Kougaku je self-hosted webová aplikace pro indexování multimediálních kniho
 ### Funkce
 
 #### Knihovna
-Položky jsou importované do knihovny podle vybrané formy médie (pomocí CUE souborů, WAV soubory na kterých proběhene audio fingerprinting, atd.), mezi podporované patří gramofonové desky, CD, kazety a digital downloads. Položky v knihovně mají u sebe veškerá metadata, včetně názvu alba, album art, umělce, interpreta, listu tracků, atd., plus odkazy na [Musicbrainz](https://muzicbrainz.org) a [Discogs](https://discogs.com).
+Položky jsou importované do knihovny podle vybrané formy médie (pomocí CUE souborů, WAV soubory na kterých proběhene audio fingerprinting, atd.), mezi podporované patří gramofonové desky, CD, kazety a digital downloads. Položky v knihovně mají u sebe veškerá metadata, včetně názvu alba, album art, umělce, interpreta, listu tracků, atd., plus odkazy na [Musicbrainz](https://musicbrainz.org) a [Discogs](https://discogs.com).
 
 #### Statistiky
 Každý uživatel je schopný nechat proběhnout analýzu na své knihovně, která prezentuje statistiky, jako nejposlouchanější žánr, nejoblíbenější umělci, aktuální finanční hodnota knihovny, atd.
