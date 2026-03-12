@@ -59,6 +59,10 @@ Administrátorský účet je jeden unikátní a je vytvářen při prvním spuš
 ![Part 7](./.github/assets/wireframe/20260305_233545.jpg)
 </details>
 
+## DB Schéma
+
+![DB scheme](./github/assets/db_schema/20260312_193139.jpg)
+
 ## Instalace
 
 Kougaku je stavěný pro používání jako Docker container.
