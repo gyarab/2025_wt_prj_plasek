@@ -106,8 +106,8 @@ services:
       - traefik
     labels:
       - "traefik.enabled=true"
-      - "traefik.http.routers.kougaku.rule=Host(`kougaku.example.com`)" # Change this to your domain
-      # - "traefik.http.routers.kougaku.tls=true" # Uncomment if you have a TLS certificate set in your HTTP router
+      - "traefik.http.routers.kougaku.rule=Host(`kougaku.example.com`)" # Změnte na svoji doménu
+      # - "traefik.http.routers.kougaku.tls=true" # Odkomentujte, pokud máte nastavený TLS certifikát ve vašem HTTP routeru.
       - "traefik.http.routers.kougaku.tls.certresolver=default"
       - "traefik.http.services.kougaku.loadbalancer.server.port=80"
 
