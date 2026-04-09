@@ -1,0 +1,99 @@
+- model: music.release
+  pk: 1
+  fields:
+    name: Release 1
+    release_media: CD
+    album: 1
+    single: 1
+    discogs_url: https://discogs.com/r1
+    lastfm_url: https://last.fm/r1
+
+- model: music.release
+  pk: 2
+  fields:
+    name: Release 2
+    release_media: Vinyl
+    album: 2
+    single: 2
+    discogs_url: https://discogs.com/r2
+    lastfm_url: https://last.fm/r2
+
+- model: music.release
+  pk: 3
+  fields:
+    name: Release 3
+    release_media: Digital
+    album: 3
+    single: 3
+    discogs_url: https://discogs.com/r3
+    lastfm_url: https://last.fm/r3
+
+- model: music.release
+  pk: 4
+  fields:
+    name: Release 4
+    release_media: CD
+    album: 4
+    single: 4
+    discogs_url: https://discogs.com/r4
+    lastfm_url: https://last.fm/r4
+
+- model: music.release
+  pk: 5
+  fields:
+    name: Release 5
+    release_media: Vinyl
+    album: 5
+    single: 5
+    discogs_url: https://discogs.com/r5
+    lastfm_url: https://last.fm/r5
+
+- model: music.release
+  pk: 6
+  fields:
+    name: Release 6
+    release_media: Digital
+    album: 6
+    single: 6
+    discogs_url: https://discogs.com/r6
+    lastfm_url: https://last.fm/r6
+
+- model: music.release
+  pk: 7
+  fields:
+    name: Release 7
+    release_media: CD
+    album: 7
+    single: 7
+    discogs_url: https://discogs.com/r7
+    lastfm_url: https://last.fm/r7
+
+- model: music.release
+  pk: 8
+  fields:
+    name: Release 8
+    release_media: Vinyl
+    album: 8
+    single: 8
+    discogs_url: https://discogs.com/r8
+    lastfm_url: https://last.fm/r8
+
+- model: music.release
+  pk: 9
+  fields:
+    name: Release 9
+    release_media: Digital
+    album: 9
+    single: 9
+    discogs_url: https://discogs.com/r9
+    lastfm_url: https://last.fm/r9
+
+- model: music.release
+  pk: 10
+  fields:
+    name: Release 10
+    release_media: CD
+    album: 10
+    single: 10
+    discogs_url: https://discogs.com/r10
+    lastfm_url: https://last.fm/r10

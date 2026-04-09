@@ -1,0 +1,81 @@
+- model: app.album
+  pk: 1
+  fields:
+    title: Random Access Memories
+    artist: Daft Punk
+    producer: Daft Punk
+    release_date: 2013-05-17 00:00:00.000000+00:00
+    genre: Electronic
+
+- model: app.album
+  pk: 2
+  fields:
+    title: Thriller
+    artist: Michael Jackson
+    producer: Quincy Jones
+    release_date: 1982-11-30 00:00:00.000000+00:00
+    genre: Pop
+
+- model: app.album
+  pk: 3
+  fields:
+    title: Back in Black
+    artist: AC/DC
+    producer: Robert John "Mutt" Lange
+    release_date: 1980-07-25 00:00:00.000000+00:00
+    genre: Rock
+
+- model: app.album
+  pk: 4
+  fields:
+    title: The Dark Side of the Moon
+    artist: Pink Floyd
+    producer: Pink Floyd
+    release_date: 1973-03-01 00:00:00.000000+00:00
+    genre: Progressive Rock
+
+- model: app.album
+  pk: 5
+  fields:
+    title: 21
+    artist: Adele
+    producer: Rick Rubin
+    release_date: 2011-01-24 00:00:00.000000+00:00
+    genre: Soul
+
+- model: app.album
+  pk: 6
+  fields:
+    title: Abbey Road
+    artist: The Beatles
+    producer: George Martin
+    release_date: 1969-09-26 00:00:00.000000+00:00
+    genre: Rock
+
+- model: app.album
+  pk: 7
+  fields:
+    title: To Pimp a Butterfly
+    artist: Kendrick Lamar
+    producer: Flying Lotus
+    release_date: 2015-03-15 00:00:00.000000+00:00
+    genre: Hip Hop
+
+- model: app.album
+  pk: 8
+  fields:
+    title: Nevermind
+    artist: Nirvana
+    producer: Butch Vig
+    release_date: 1991-09-24 00:00:00.000000+00:00
+    genre: Grunge
+
+- model: app.album
+  pk: 9
+  fields:
+    title: Future Nostalgia
+    artist: Dua Lipa
+    producer: Ian Kirkpatrick
+    release_date: 2020-03-27 00:00:00.000000+00:00
+    genre: Pop
+

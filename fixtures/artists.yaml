@@ -1,0 +1,79 @@
+- model: music.artist
+  pk: 1
+  fields:
+    name: Artist 1
+    mb_id: 101
+    discogs_url: https://discogs.com/a1
+    lastfm_url: https://last.fm/a1
+
+- model: music.artist
+  pk: 2
+  fields:
+    name: Artist 2
+    mb_id: 102
+    discogs_url: https://discogs.com/a2
+    lastfm_url: https://last.fm/a2
+
+- model: music.artist
+  pk: 3
+  fields:
+    name: Artist 3
+    mb_id: 103
+    discogs_url: https://discogs.com/a3
+    lastfm_url: https://last.fm/a3
+
+- model: music.artist
+  pk: 4
+  fields:
+    name: Artist 4
+    mb_id: 104
+    discogs_url: https://discogs.com/a4
+    lastfm_url: https://last.fm/a4
+
+- model: music.artist
+  pk: 5
+  fields:
+    name: Artist 5
+    mb_id: 105
+    discogs_url: https://discogs.com/a5
+    lastfm_url: https://last.fm/a5
+
+- model: music.artist
+  pk: 6
+  fields:
+    name: Artist 6
+    mb_id: 106
+    discogs_url: https://discogs.com/a6
+    lastfm_url: https://last.fm/a6
+
+- model: music.artist
+  pk: 7
+  fields:
+    name: Artist 7
+    mb_id: 107
+    discogs_url: https://discogs.com/a7
+    lastfm_url: https://last.fm/a7
+
+- model: music.artist
+  pk: 8
+  fields:
+    name: Artist 8
+    mb_id: 108
+    discogs_url: https://discogs.com/a8
+    lastfm_url: https://last.fm/a8
+
+- model: music.artist
+  pk: 9
+  fields:
+    name: Artist 9
+    mb_id: 109
+    discogs_url: https://discogs.com/a9
+    lastfm_url: https://last.fm/a9
+
+- model: music.artist
+  pk: 10
+  fields:
+    name: Artist 10
+    mb_id: 110
+    discogs_url: https://discogs.com/a10
+    lastfm_url: https://last.fm/a10

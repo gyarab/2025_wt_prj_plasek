@@ -1,0 +1,109 @@
+- model: music.track
+  pk: 1
+  fields:
+    title: Track 1
+    artist: 1
+    producer: 1
+    release_date: 2023-01-01
+    genre: 1
+    mb_id: 301
+    album: 1
+
+- model: music.track
+  pk: 2
+  fields:
+    title: Track 2
+    artist: 2
+    producer: 2
+    release_date: 2023-01-02
+    genre: 2
+    mb_id: 302
+    album: 2
+
+- model: music.track
+  pk: 3
+  fields:
+    title: Track 3
+    artist: 3
+    producer: 3
+    release_date: 2023-01-03
+    genre: 3
+    mb_id: 303
+    album: 3
+
+- model: music.track
+  pk: 4
+  fields:
+    title: Track 4
+    artist: 4
+    producer: 4
+    release_date: 2023-01-04
+    genre: 4
+    mb_id: 304
+    album: 4
+
+- model: music.track
+  pk: 5
+  fields:
+    title: Track 5
+    artist: 5
+    producer: 5
+    release_date: 2023-01-05
+    genre: 5
+    mb_id: 305
+    album: 5
+
+- model: music.track
+  pk: 6
+  fields:
+    title: Track 6
+    artist: 6
+    producer: 6
+    release_date: 2023-01-06
+    genre: 6
+    mb_id: 306
+    album: 6
+
+- model: music.track
+  pk: 7
+  fields:
+    title: Track 7
+    artist: 7
+    producer: 7
+    release_date: 2023-01-07
+    genre: 7
+    mb_id: 307
+    album: 7
+
+- model: music.track
+  pk: 8
+  fields:
+    title: Track 8
+    artist: 8
+    producer: 8
+    release_date: 2023-01-08
+    genre: 8
+    mb_id: 308
+    album: 8
+
+- model: music.track
+  pk: 9
+  fields:
+    title: Track 9
+    artist: 9
+    producer: 9
+    release_date: 2023-01-09
+    genre: 9
+    mb_id: 309
+    album: 9
+
+- model: music.track
+  pk: 10
+  fields:
+    title: Track 10
+    artist: 10
+    producer: 10
+    release_date: 2023-01-10
+    genre: 10
+    mb_id: 310
+    album: 10

@@ -1,0 +1,80 @@
+- model: music.producer
+  pk: 1
+  fields:
+    name: Producer 1
+    mb_id: 201
+    discogs_url: https://discogs.com/p1
+    lastfm_url: https://last.fm/p1
+
+- model: music.producer
+  pk: 2
+  fields:
+    name: Producer 2
+    mb_id: 202
+    discogs_url: https://discogs.com/p2
+    lastfm_url: https://last.fm/p2
+
+- model: music.producer
+  pk: 3
+  fields:
+    name: Producer 3
+    mb_id: 203
+    discogs_url: https://discogs.com/p3
+    lastfm_url: https://last.fm/p3
+
+- model: music.producer
+  pk: 4
+  fields:
+    name: Producer 4
+    mb_id: 204
+    discogs_url: https://discogs.com/p4
+    lastfm_url: https://last.fm/p4
+
+- model: music.producer
+  pk: 5
+  fields:
+    name: Producer 5
+    mb_id: 205
+    discogs_url: https://discogs.com/p5
+    lastfm_url: https://last.fm/p5
+
+- model: music.producer
+  pk: 6
+  fields:
+    name: Producer 6
+    mb_id: 206
+    discogs_url: https://discogs.com/p6
+    lastfm_url: https://last.fm/p6
+
+- model: music.producer
+  pk: 7
+  fields:
+    name: Producer 7
+    mb_id: 207
+    discogs_url: https://discogs.com/p7
+    lastfm_url: https://last.fm/p7
+
+- model: music.producer
+  pk: 8
+  fields:
+    name: Producer 8
+    mb_id: 208
+    discogs_url: https://discogs.com/p8
+    lastfm_url: https://last.fm/p8
+
+- model: music.producer
+  pk: 9
+  fields:
+    name: Producer 9
+    mb_id: 209
+    discogs_url: https://discogs.com/p9
+    lastfm_url: https://last.fm/p9
+
+- model: music.producer
+  pk: 10
+  fields:
+    name: Producer 10
+    mb_id: 210
+    discogs_url: https://discogs.com/p10
+    lastfm_url: https://last.fm/p10
+

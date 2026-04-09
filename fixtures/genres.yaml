@@ -1,0 +1,59 @@
+- model: music.genre
+  pk: 1
+  fields:
+    name: Rock
+    description: Rock music genre
+
+- model: music.genre
+  pk: 2
+  fields:
+    name: Pop
+    description: Pop music genre
+
+- model: music.genre
+  pk: 3
+  fields:
+    name: Hip Hop
+    description: Hip hop music genre
+
+- model: music.genre
+  pk: 4
+  fields:
+    name: Jazz
+    description: Jazz music genre
+
+- model: music.genre
+  pk: 5
+  fields:
+    name: Classical
+    description: Classical music genre
+
+- model: music.genre
+  pk: 6
+  fields:
+    name: Electronic
+    description: Electronic music genre
+
+- model: music.genre
+  pk: 7
+  fields:
+    name: Reggae
+    description: Reggae music genre
+
+- model: music.genre
+  pk: 8
+  fields:
+    name: Blues
+    description: Blues music genre
+
+- model: music.genre
+  pk: 9
+  fields:
+    name: Metal
+    description: Metal music genre
+
+- model: music.genre
+  pk: 10
+  fields:
+    name: Country
+    description: Country music genre
