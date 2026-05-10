@@ -4,33 +4,31 @@ from django.db import models
 class Album(models.Model):
 	title = models.CharField(max_length=255)
 	artist = models.ForeignKey('Artist', on_delete=models.SET_NULL, null=True)
-	producer = models.CharField(max_length=255)
 	release_date = models.DateField()
 	genre = models.ForeignKey('Genre', on_delete=models.SET_NULL, null=True)
-	mb_id = models.PositiveSmallIntegerField()
-	discogs_url = models.CharField()
-	lastfm_url = models.CharField()
+	mb_id = models.UUIDField()
+	discogs_url = models.CharField(null=True)
+	lastfm_url = models.CharField(null=True)
 
 class Track(models.Model):
 	title = models.CharField(max_length=255)
 	artist = models.ForeignKey('Artist', on_delete=models.SET_NULL, null=True)
-	producer = models.ForeignKey('Producer', on_delete=models.SET_NULL, null=True)
 	release_date = models.DateField()
 	genre = models.ForeignKey('Genre', on_delete=models.SET_NULL, null=True)
-	mb_id = models.PositiveSmallIntegerField()
+	mb_id = models.UUIDField()
 	album = models.ForeignKey('Album', on_delete=models.SET_NULL, null=True)
 
 class Artist(models.Model):
 	name = models.CharField(max_length=255)
-	mb_id = models.PositiveSmallIntegerField()
-	discogs_url = models.CharField()
-	lastfm_url = models.CharField()
+	mb_id = models.UUIDField()
+	discogs_url = models.CharField(null=True)
+	lastfm_url = models.CharField(null=True)
 
 class Producer(models.Model):
 	name = models.CharField(max_length=255)
-	mb_id = models.PositiveSmallIntegerField()
-	discogs_url = models.CharField()
-	lastfm_url = models.CharField()
+	mb_id = models.UUIDField()
+	discogs_url = models.CharField(null=True)
+	lastfm_url = models.CharField(null=True)
 
 class Genre(models.Model):
 	name = models.CharField(max_length=255)
@@ -41,5 +39,6 @@ class Release(models.Model):
 	release_media = models.CharField(max_length=255)
 	album = models.ForeignKey('Album', on_delete=models.SET_NULL, null=True)
 	single = models.ForeignKey('Track', on_delete=models.SET_NULL, null=True)
-	discogs_url = models.CharField()
-	lastfm_url = models.CharField()
+	mb_id = models.UUIDField()
+	discogs_url = models.CharField(null=True)
+	lastfm_url = models.CharField(null=True)
