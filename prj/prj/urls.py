@@ -23,5 +23,6 @@ urlpatterns = [
     path("admin/", admin.site.urls),
 	path('', views.render_homepage, name="homepage"),
 	path('about/', views.render_about, name="about"),
-	path('api/', api.urls)
+	path('api/', api.urls),
+	path('playground/', views.render_homepage, name="playground")
 ]

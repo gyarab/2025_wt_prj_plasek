@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<p>Balls</p>
+	<input id="btn" type="button" value="Fetch first album in DB">
+	<script defer>
+		document.querySelector('#btn').addEventListener('click', () => {
+			let spinner = document.createElement('div')
+			spinner.classList.add('loader')
+			document.querySelector('body').appendChild(spinner)		
+			fetch('/api/album/1')
+				.then(res => {
+					res.json()
+						.then(jsn => {
+							document.querySelector('.loader').remove()
+							let body = document.querySelector('body')
+
+							let albumName = document.createElement('h1')
+							albumName.textContent = jsn.title
+							body.appendChild(albumName)
+
+							let artistName = document.createElement('h2')
+							artistName.textContent = jsn.artist.name
+							body.appendChild(artistName)
+
+							let albumArt = fetch(`https://coverartarchive.org/release/${jsn.mb_id}`)
+								.then(res => {
+									res.text()
+										.then(text => {
+											let mb_url = text.slice(4)
+											fetch(mb_url)
+												.then(resMb => {
+													resMb.json()
+														.then(mbJson => {
+															fetch(mbJson.images[0].image)
+																.then(res => {
+																	res.blob()
+																		.then(data => {
+																			let albumArt = document.querySelector('body').createElement('img')
+																			albumArt.src = window.URL.createObjectURL(data)
+																		})
+																})
+														})
+												})
+										})
+								})
+						})
+				})
+		})
+	</script>
+{% endblock %}

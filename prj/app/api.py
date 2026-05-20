@@ -4,6 +4,20 @@ import requests
 
 api: NinjaAPI = NinjaAPI()
 
+def serializeArtist(a: Artist):
+	return {
+		"name": a.name,
+		"mb_id": a.mb_id,
+		"discogs_url": a.discogs_url if hasattr(a, 'discogs_url') else None,
+		"lastfm_url": a.lastfm_url if hasattr(a, 'lastfm_url') else None
+	}
+
+def serializeGenre(g: Genre):
+	return {
+		"name": g.name,
+		"description": g.description
+	}
+
 @api.get("/album")
 def get_album_list(request):
 	albums = Album.objects.all()
@@ -28,10 +42,9 @@ def get_album(request, album_id: int):
 			"status": "ok",
 			"id": album.pk,
 			"title": album.title,
-			"artist": album.artist.name,
-			"producer": album.producer,
+			"artist": serializeArtist(album.artist),
 			"release_date": str(album.release_date),
-			"genre": album.genre.name,
+			"genre": serializeGenre(album.genre),
 			"mb_id": album.mb_id,
 			"discogs_url": album.discogs_url,
 			"lastfm_url": album.lastfm_url
@@ -68,7 +81,6 @@ def add_album(request, mb_id):
 			}
 		}
 	except Exception as e:
-		print(e)
 		return {
 			"status": "Internal Server Error"
 		}
